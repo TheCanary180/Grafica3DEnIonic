@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- <div id="lineChart"></div> -->
+  <svg width="900" height="500" id="lineChart"></svg>
+  <!-- <button ion-button round  class="Resistencia">Resistencia</button>
+  <button ion-button round  class="Soporte">Soporte</button> -->
+
+  <ion-segment [(ngModel)]="icons" color="secondary">
+    <ion-segment-button value="Resistencia">
+      <ion-icon name="arrow-up"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="Soporte">
+      <ion-icon name="arrow-down"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+
+  <p>{{icons}}</p>
+</ion-content>
